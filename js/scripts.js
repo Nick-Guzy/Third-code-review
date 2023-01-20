@@ -15,13 +15,29 @@ window.onload = function(){
       console.log(Array);}
   }
 
+
+function check(Array)
+let i = 0;
+
+while (i < Array.length) {
+  console.log(scores[i])
+  i++
+}
+
+
+
+
+
+
   function replace(Array){
     for (let i = 0; i <= num; i++){
-      if (Array)[i] = (1)
-      Array.replace("beep!");
-      console.log(Array)
+      if (Array[i] = 1){
+          Array[i] = "boop!";
+          console.log(Array);
+      }
     }
   }
+
 
 
 
