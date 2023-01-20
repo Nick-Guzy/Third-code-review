@@ -17,7 +17,9 @@ Expected Ouput: [0,beep!,boop!,3,4,5]
 ## Describe Won't you be my neighbor?
 Test: Turn any number with 3 into Describe Won't you be my neighbor?
 Code: if 3 then "Won't you be my neighbor?"
-Expected Ouput: [0,beep!,boop!,Won't you be my neighbor?,4,5]
+Expected Ouput: [0,beep!,boop!,Won'tyoubemyneighbor,4,5]
+
+heierarchy needs to follow ascending priority, 23 prints 3, 12 prints 2, 10 prints 1.
 
 Test: 
 Code: 
