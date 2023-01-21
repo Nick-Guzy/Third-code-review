@@ -11,12 +11,13 @@ window.onload = function(){
   function build(num){
     const x = num
     const arr = []
+    const innerTextError = "Enter a number between 1 and 9";
     if (num <= 9){
     for(let i = 0; i <= num; i++){
       arr.push(i)
       console.log(arr);}
       replace(arr)}
-      else {(document.getElementById("output-area").innerText = "Enter a number between 1 and 9")}
+      else {(document.getElementById("output-area").innerText = innerTextError)}
   }
 
 
@@ -29,5 +30,3 @@ function replace(arr){
   console.log(arr)
   document.getElementById("output-area").innerText = arr;
 }
-
-document.getElementById("output-area").innerText = arr;
