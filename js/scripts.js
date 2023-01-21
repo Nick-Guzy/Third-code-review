@@ -2,65 +2,32 @@ window.onload = function(){
   document.querySelector("form")
   document.querySelector("form").onsubmit = function(event){
   event.preventDefault();
+
+  
  
 
 }
   }
   function build(num){
     const x = num
-    const Array = []
-    
+    const arr = []
+    if (num <= 9){
     for(let i = 0; i <= num; i++){
-      Array.push(i)
-      console.log(Array);}
+      arr.push(i)
+      console.log(arr);}
+      replace(arr)}
+      else {(document.getElementById("output-area").innerText = "Enter a number between 1 and 9")}
   }
 
 
-function check(Array)
-let i = 0;
-
-while (i < Array.length) {
-  console.log(scores[i])
-  i++
+function replace(arr){
+  arr.replace(1, "beep!")
+  console.log(arr)
+  arr.replace(2, "boop!")
+  console.log(arr)
+  arr.replace(3, "Will you be my neighbor?")
+  console.log(arr)
+  document.getElementById("output-area").innerText = arr;
 }
 
-
-
-
-
-
-  function replace(Array){
-    for (let i = 0; i <= num; i++){
-      if (Array[i] = 1){
-          Array[i] = "boop!";
-          console.log(Array);
-      }
-    }
-  }
-
-
-
-
-  
-
-
-
-
-
-      
-//       if (x === 1)
-//       x.replace("beep!");
-//       console.log("1")
-//   } else if (x === 2){
-//     x.replace("boop!")
-//     console.log("2")
-//   } else (x ===3);{
-//     x.replace("Wont you be my neighor?")
-//   }
-// }
-
-
-
-
-
-  // document.getElementById("output-area").innerText
+document.getElementById("output-area").innerText = arr;
