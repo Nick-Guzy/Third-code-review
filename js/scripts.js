@@ -1,39 +1,53 @@
-window.onload = function(){
-  document.querySelector("form")
-  document.querySelector("form").onsubmit = function(event){
-  event.preventDefault();
+//Business logic
 
-  
- const arr = []
-
-}
-  }
-  function build(num){
-    const x = num
+  function buildUserArray(num){
+    let builtArray = [];
     for(let i = 0; i <= num; i++){
-      arr.push(i)
-      console.log(arr);}
-    arbit(arr)
+      builtArray.push(i);
+      console.log(builtArray);
+    }
+      return builtArray;
+    
 }
 
-  
-
-
-function arbit(arr){
-  for(let i = 0; i <= arr.length; i++){
-    if(arr[i] = 1){
-      arr.splice(i,1,"beep!");
-    }
-    else if(arr[i] = 2){
-      arr.splice(i,1,"boop!");
-    }
-    else if(arr[i = 3]){
-      arr.splice(i,1,"Will you be my neighbor?")
-    }
+function swapValue(arrayValue){
+  let newValue = arrayValue.toString();
+  console.log(newValue);
+  if(newValue.indexOf('3') !== -1){
+    newValue = 'Won\'t you be my neighbor?';
+    console.log(newValue);
+  } else if (newValue.indexOf('2') !== -1) {
+    newValue = 'Boop!';
+    console.log(newValue);
+  } else if (newValue.indexOf('1') !== -1) {
+    newValue = 'Beep!';
+    console.log(newValue);
   }
-  console.log(arr)
-  document.getElementById("output-area").innerText = arr;
+  console.log(newValue);
+  return newValue;
 }
 
+function buildOutputArray(inputNum){
+  let userArray = buildUserArray(inputNum);
+  let outputArray = [];
+  console.log(userArray);
+  userArray.forEach(e => outputArray.push(swapValue(e)));
+  console.log(outputArray);
+  let textArray = outputArray.toString();
+  console.log(textArray);
+  document.getElementById("output-area").innerText = textArray;
+}
 
+//User Logic
 
+window.onload = function(){
+  let form = document.querySelector('form');
+  form.onsubmit = function(event){
+    event.preventDefault();
+    console.log(document.getElementById('num-input'));
+    const userInput = (document.getElementById('num-input').value);
+    console.log(userInput.value);
+    console.log(userInput);
+    buildOutputArray(userInput);
+  }
+}

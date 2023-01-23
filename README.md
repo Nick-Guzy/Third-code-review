@@ -1,38 +1,17 @@
-## Describe turning user input into and array
+## Describe turning user input into an array
 
 Test: Take user input and turn it into an array
-Code: userInput(x) = i
+Code: buildUserArray
 Expected Ouput: [0,1,2,3,4,5]
 
-## Describe beep!
-Test: Turn any number with 1 into beep!
-Code: if 1 then "beep!"
-Expected Ouput: [0,beep!,2,3,4,5]
+## Iterate through array and swap value
 
-## Describe boop!
-Test: Turn any number with 2 into boop!
-Code: if 2 then "boop!"
-Expected Ouput: [0,beep!,boop!,3,4,5]
+Test: Check for 1, 2, 3 and replace number
+Code: swapValue
+Expected Output: [beep!,boop!,wont you be my neighbor?]
 
-## Describe Won't you be my neighbor?
-Test: Turn any number with 3 into Describe Won't you be my neighbor?
-Code: if 3 then "Won't you be my neighbor?"
-Expected Ouput: [0,beep!,boop!,Won'tyoubemyneighbor,4,5]
+## Print new array
 
-heierarchy needs to follow ascending priority, 23 prints 3, 12 prints 2, 10 prints 1.
-
-Test: 
-Code: 
-Expected Ouput: 
-
-Test: 
-Code: 
-Expected Ouput: 
-
-Test: 
-Code: 
-Expected Ouput: 
-
-Test: 
-Code: 
-Expected Ouput: 
+Test: Print new string
+Code: buildOutputArray
+Expected Output: beep!, boop!, wont you be my neighbor?
