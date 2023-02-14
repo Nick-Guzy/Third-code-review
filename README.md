@@ -23,10 +23,10 @@ Nicholas Guzy.
 # Description
 This will take a number the user will input and display an array of the numbers based on the user input. It will replace 1 with "Boop!", 2 with "Beep!", and 3 with "Wont you be my neighbor?". This will be accomplished with looping, if and else if statements, and Web APIs.
 # Technologies used:
-*html
-*JS
-*CSS
-*MD
+* html
+* JS
+* CSS
+* MD
 # Setup steps
 Clone down the file and then open the index file.
 # Known bugs
